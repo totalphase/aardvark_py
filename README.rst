@@ -1,6 +1,6 @@
 TotalPhase Aardvark Python API
 ==============================
 
-This package provides the TotalPhase Aardvark Python API modified for easy distribution via PyPI.
+This package provides the TotalPhase Aardvark Python API modified for easy distribution and installation via PyPI.
 
-These files have been authorized for modification and distribution by Flying Camp Design with permission from Total Phase, Inc.  Please refer to LICENSE.txt for the Total Phase license agreement which governs the use of the provided API files.
+Permission to modify and redistribute the Python language modules and associated shared object files has been granted explicitly by Total Phase, Inc. for use in this package.  Distribution and use of this package is subject to the license agreement provided in the LICENSE.txt file distributed with this package.
