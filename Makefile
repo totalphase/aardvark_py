@@ -14,6 +14,9 @@ build:
 dist: clean build
 	python setup.py sdist bdist_wheel
 
+upload:
+	twine upload -u flyingcampdesign dist/*
+
 clean:
 	python setup.py clean --all
 	find . -name \*.pyc -delete
