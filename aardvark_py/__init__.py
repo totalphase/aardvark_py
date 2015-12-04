@@ -9,6 +9,31 @@
 # in the LICENSE.txt file distributed with this package.
 #==========================================================================
 
+
+#==========================================================================
+# DISTRIBUTION VERSION
+#--------------------------------------------------------------------------
+# This is a PEP 0008 and PEP 0440 compliant version string, i.e.
+# "major.minor.micro".  It is read by setup.py to determine the
+# distribution version for public release on PyPI.
+#
+# "major.minor" MUST match the v[major.minor] release version of the
+# aardvark API release zip file.  For example, if the Total Phase API
+# file is aardvark-api-macosx-x86_64-v5.15.zip, this version must start
+# with "5.15".
+#
+# "minor" is an additional version specifier that is incremented whenever
+# a new release of this distribution is published.  It must be reset to
+# "0" whenever the major or minor version is changed, i.e.
+# 5.15.0 < 5.15.1 < 5.15.2 < 5.16.0
+#
+# For a discussion on single-sourcing the version across setup.py and
+# the project code, see
+# https://packaging.python.org/en/latest/single_source_version.html
+#==========================================================================
+__version__ = "0.1.0.dev1"
+
+
 #==========================================================================
 # Aardvark Interface Library
 #--------------------------------------------------------------------------
@@ -57,29 +82,6 @@
 #      aardvark.cs      --  C# .NET source
 #      aardvark_net.dll --  Compiled .NET binding
 #==========================================================================
-
-
-#==========================================================================
-# DISTRIBUTION VERSION
-#==========================================================================
-# This is a PEP 0008 and PEP 0440 compliant version string, i.e.
-# "major.minor.micro".  It is read by setup.py to determine the
-# distribution version for public release on PyPI.
-#
-# "major.minor" MUST match the v[major.minor] release version of the
-# aardvark API release zip file.  For example, if the Total Phase API
-# file is aardvark-api-macosx-x86_64-v5.15.zip, this version must start
-# with "5.15".
-#
-# "minor" is an additional version specifier that is incremented whenever
-# a new release of this distribution is published.  It must be reset to
-# "0" whenever the major or minor version is changed, i.e.
-# 5.15.0 < 5.15.1 < 5.15.2 < 5.16.0
-#
-# For a discussion on single-sourcing the version across setup.py and
-# the project code, see
-# https://packaging.python.org/en/latest/single_source_version.html
-__version__ = "0.1.0.dev1"
 
 
 #==========================================================================
