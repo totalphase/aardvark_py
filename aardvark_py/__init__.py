@@ -63,7 +63,8 @@
 # DISTRIBUTION VERSION
 #==========================================================================
 # This is a PEP 0008 and PEP 0440 compliant version string, i.e.
-# "major.minor.micro"
+# "major.minor.micro".  It is read by setup.py to determine the
+# distribution version for public release on PyPI.
 #
 # "major.minor" MUST match the v[major.minor] release version of the
 # aardvark API release zip file.  For example, if the Total Phase API
