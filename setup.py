@@ -27,7 +27,6 @@ def find_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 setup(
-
     name='aardvark_py',
     version=find_version('aardvark_py', '__init__.py'),
     description='Total Phase Aardvark Python API',
