@@ -1,4 +1,4 @@
-.PHONY: all check test build dist clean
+.PHONY: all check test build dist upload doc clean
 
 all: clean check test doc dist
 
