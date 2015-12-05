@@ -1,4 +1,4 @@
-"""TotalPhase Aardvark Python API.
+"""Total Phase Aardvark Python API.
 
 See:
 http://www.totalphase.com/products/aardvark-software-api
@@ -30,7 +30,7 @@ setup(
 
     name='aardvark_py',
     version=find_version('aardvark_py', '__init__.py'),
-    description='TotalPhase Aardvark Python API',
+    description='Total Phase Aardvark Python API',
     long_description=read('README.rst'),
     url='https://github.com/FlyingCampDesign/aardvark_py.git',
     author='Flying Camp Design',
