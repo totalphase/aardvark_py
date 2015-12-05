@@ -35,7 +35,7 @@ setup(
     author='Flying Camp Design',
     author_email='support@flyingcampdesign.com',
     license='Proprietary License (see LICENSE.txt provided with the distribution)',
-    keywords='development',
+    keywords='development I2C SPI',
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
