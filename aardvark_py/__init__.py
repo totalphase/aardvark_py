@@ -22,10 +22,10 @@
 # file is aardvark-api-macosx-x86_64-v5.15.zip, this version must start
 # with "5.15".
 #
-# "minor" is an additional version specifier that is incremented whenever
+# "micro" is an additional version specifier that is incremented whenever
 # a new release of this distribution is published.  It must be reset to
 # "0" whenever the major or minor version is changed, i.e.
-# 5.15.0 < 5.15.1 < 5.15.2 < 5.16.0
+# 5.15.0 < 5.15.1 < 5.15.2 < 5.16.0 < 5.16.1 < 6.0.0
 #
 # For a discussion on single-sourcing the version across setup.py and
 # the project code, see

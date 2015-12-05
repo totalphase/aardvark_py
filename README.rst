@@ -1,8 +1,24 @@
-TotalPhase Aardvark Python API
-==============================
+Total Phase Aardvark Python API
+===============================
 
-This package provides the TotalPhase Aardvark Python API modified for easy
+This package provides the Total Phase Aardvark Python API modified for easy
 distribution and installation via PyPI.
+
+
+Compatibility
+-------------
+
+The "``major.minor``" component of the PyPI release version
+(``major.minor.micro``) matches the ``v[major.minor]`` version of the aardvark
+API release zip file.  For example, the ``aardvark-py 5.15.0`` release on PyPI
+is guaranteed to be API compatible with
+``aardvark-api-[platform]-[arch]-v5.15.zip``.  The "``micro``" component is an
+additional version specifier that is incremented whenever a new release of this
+package is published.
+
+The Python API from Total Phase currently only supports Mac OS X, Linux, and
+Windows (32-bit & 64-bit).  Since this package is derived directly from Total
+Phase API releases, it is subject to the same compatibility restrictions.
 
 
 Installation

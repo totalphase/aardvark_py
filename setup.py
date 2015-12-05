@@ -47,6 +47,10 @@ setup(
         'Programming Language :: Python :: 2.5',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Operating System :: MacOS :: MacOS X',
+        'Operating System :: Microsoft :: Windows',
+        'Operating System :: POSIX :: Linux',
+        'Topic :: Software Development :: Embedded Systems',
     ],
 
     packages=find_packages(),
