@@ -35,7 +35,8 @@ Usage
 -----
 
 Once installed, the ``aardvark_py`` package is a drop-in replacement for the
-``aardvark_py.py`` language module distributed in the Aardvark API release.
+``aardvark_py.py`` language module distributed in the Aardvark API release from
+Total Phase.
 
 .. code-block:: console
 
