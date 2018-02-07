@@ -54,10 +54,25 @@ Total Phase.
     1
 
 
+Development
+-----------
+
+.. code-block:: console
+
+    $ pip install -r dev-requirements.txt
+    $ git clone https://github.com/FlyingCampDesign/aardvark_py.git
+    $ cd aardvark_py
+    $ python setup.py develop
+    $ make
+
+Open ``docs/_build/html/index.html`` in a browser to view the generated
+documentation.
+
+
 License
 -------
 
 Permission to modify and redistribute the Python language modules and associated
 shared object files has been granted explicitly by Total Phase, Inc. for use in
 this package.  Distribution and use of this package is subject to the license
-agreement provided in the LICENSE.txt file distributed with this package.
+agreement provided in the ``LICENSE.txt`` file distributed with this package.
