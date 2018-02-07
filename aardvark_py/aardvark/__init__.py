@@ -1,8 +1,8 @@
 """Under the hood, the 'aardvark' submodule is actually a python extension module provided by Total Phase in the API release:
 
-aardvark.so      --  Linux/Mac shared object
+``aardvark.so``      --  Linux/Mac shared object
 
-aardvark.dll/pyd --  Windows dynamic link library
+``aardvark.dll/pyd`` --  Windows dynamic link library
 
 The official API documentation can be found at https://www.totalphase.com/support/articles/200468316-Aardvark-I2C-SPI-Host-Adapter-User/#s5
 """
