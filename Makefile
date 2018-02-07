@@ -1,6 +1,6 @@
 .PHONY: all check test build dist upload apidoc docs clean
 
-all: clean check test docs dist
+all: clean check docs dist
 
 init:
 	pip install -r requirements.txt
@@ -40,5 +40,6 @@ clean-docs: clean-apidoc
 clean: clean-docs
 	python setup.py clean --all
 	find . -name \*.pyc -delete
+	find . -name __pycache__ -delete
 	rm -rf *.egg-info dist
 	rm -f *.html

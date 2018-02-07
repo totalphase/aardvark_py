@@ -20,6 +20,9 @@ The Python API from Total Phase currently only supports Mac OS X, Linux, and
 Windows (32-bit & 64-bit).  Since this package is derived directly from Total
 Phase API releases, it is subject to the same compatibility restrictions.
 
+API version 5.30 adds support for Python 3 (previous versions only supported
+Python 2).
+
 
 Installation
 ------------
@@ -61,7 +64,7 @@ Development
 
     $ git clone https://github.com/FlyingCampDesign/aardvark_py.git
     $ cd aardvark_py
-    $ pip install -r dev-requirements.txt
+    $ make init-dev
     $ make
 
 Open ``docs/_build/html/index.html`` in a browser to view the generated

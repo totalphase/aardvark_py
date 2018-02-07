@@ -1,1 +1,1 @@
-from aardvark import *
+from .aardvark import *

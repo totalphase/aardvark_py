@@ -31,7 +31,7 @@
 # the project code, see
 # https://packaging.python.org/en/latest/single_source_version.html
 #==========================================================================
-__version__ = "5.15.2.dev0"
+__version__ = "5.30.0.dev0"
 
 
 #==========================================================================
@@ -90,7 +90,7 @@ __version__ = "5.15.2.dev0"
 AA_API_VERSION    = 0x050a   # v5.10
 AA_REQ_SW_VERSION = 0x050a   # v5.10
 
-import aardvark as api
+from . import aardvark as api
 
 AA_SW_VERSION      = api.py_version() & 0xffff
 AA_REQ_API_VERSION = (api.py_version() >> 16) & 0xffff
@@ -105,16 +105,16 @@ import struct
 #==========================================================================
 # HELPER FUNCTIONS
 #==========================================================================
-def array_u08 (n):  return array('B', '\0'*n)
-def array_u16 (n):  return array('H', '\0\0'*n)
-def array_u32 (n):  return array('I', '\0\0\0\0'*n)
-def array_u64 (n):  return array('K', '\0\0\0\0\0\0\0\0'*n)
-def array_s08 (n):  return array('b', '\0'*n)
-def array_s16 (n):  return array('h', '\0\0'*n)
-def array_s32 (n):  return array('i', '\0\0\0\0'*n)
-def array_s64 (n):  return array('L', '\0\0\0\0\0\0\0\0'*n)
-def array_f32 (n):  return array('f', '\0\0\0\0'*n)
-def array_f64 (n):  return array('d', '\0\0\0\0\0\0\0\0'*n)
+def array_u08 (n):  return array('B', [0]*n)
+def array_u16 (n):  return array('H', [0]*n)
+def array_u32 (n):  return array('I', [0]*n)
+def array_u64 (n):  return array('K', [0]*n)
+def array_s08 (n):  return array('b', [0]*n)
+def array_s16 (n):  return array('h', [0]*n)
+def array_s32 (n):  return array('i', [0]*n)
+def array_s64 (n):  return array('L', [0]*n)
+def array_f32 (n):  return array('f', [0]*n)
+def array_f64 (n):  return array('d', [0]*n)
 
 
 #==========================================================================
