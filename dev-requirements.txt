@@ -3,3 +3,5 @@ twine
 docutils
 pygments
 sphinx
+
+-e .

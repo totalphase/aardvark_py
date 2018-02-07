@@ -59,10 +59,9 @@ Development
 
 .. code-block:: console
 
-    $ pip install -r dev-requirements.txt
     $ git clone https://github.com/FlyingCampDesign/aardvark_py.git
     $ cd aardvark_py
-    $ python setup.py develop
+    $ pip install -r dev-requirements.txt
     $ make
 
 Open ``docs/_build/html/index.html`` in a browser to view the generated
