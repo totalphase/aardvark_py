@@ -14,3 +14,7 @@
 
 # pyenv version
 .python-version
+
+# Sphinx docs
+docs/_build/
+docs/apidoc/
