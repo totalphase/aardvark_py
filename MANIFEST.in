@@ -1,8 +1,8 @@
 include README.rst
 include LICENSE.txt
 include Makefile
-dev-requirements.txt
-requirements.txt
+include dev-requirements.txt
+include requirements.txt
 
 recursive-include aardvark_py/aardvark *.so *.pyd
 
