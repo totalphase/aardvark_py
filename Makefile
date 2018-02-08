@@ -1,6 +1,6 @@
 .PHONY: all check test build dist upload apidoc docs clean
 
-all: clean check docs dist
+all: clean check test docs dist
 
 init:
 	pip install -r requirements.txt
