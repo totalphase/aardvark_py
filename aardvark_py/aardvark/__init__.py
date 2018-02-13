@@ -15,7 +15,7 @@ if (_system in ('Darwin')):
     from .darwin import *
 elif (_system in ('Linux')):
     from .linux import *
-elif (_system in ('Windows', 'Microsoft')):
+elif (_system in ('Microsoft', 'Windows')):
     from .windows import *
 else:
-    raise ImportError("%s is not supported by Aardvark API" % _system)
+    raise ImportError("%s system is not supported by Aardvark API" % _system)

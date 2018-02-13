@@ -5,8 +5,8 @@ This package provides the Total Phase Aardvark Python API modified for easy
 distribution and installation via PyPI.
 
 
-Compatibility
--------------
+Total Phase Release Versions
+----------------------------
 
 The "``major.minor``" component of the PyPI release version
 (``major.minor.micro``) matches the ``v[major.minor]`` version of the aardvark
@@ -16,9 +16,22 @@ is guaranteed to be API compatible with
 additional version specifier that is incremented whenever a new release of this
 package is published.
 
-The Python API from Total Phase currently only supports Mac OS X, Linux, and
-Windows (32-bit & 64-bit).  Since this package is derived directly from Total
-Phase API releases, it is subject to the same compatibility restrictions.
+
+OS Support
+----------
+
+The Python API from Total Phase officially supports the following OS versions:
+
+- Windows 7, 8, 8.1, 10
+- Mac OS 10.5 - 10.12
+- Ubuntu 12.04 LTS, 14.04 LTS, 16.04 LTS
+
+Since this package is derived directly from Total Phase API releases, it is
+subject to the same compatibility restrictions.
+
+
+Python 3 Support
+----------------
 
 API version 5.30 adds support for Python 3 (previous versions only supported
 Python 2).
@@ -27,7 +40,15 @@ Python 2).
 Installation
 ------------
 
-The ``aardvark_py`` package can be installed from PyPI using ``pip``:
+Now that Pipenv_ is the `officially recommended`_ Python packaging tool from
+Python.org_, the ``aardvark_py`` package can be installed from PyPI using
+``pipenv``:
+
+.. code-block:: console
+
+    $ pipenv install aardvark_py
+
+The ``aardvark_py`` package can also be installed from PyPI using ``pip``:
 
 .. code-block:: console
 
@@ -64,7 +85,7 @@ Development
 
     $ git clone https://github.com/FlyingCampDesign/aardvark_py.git
     $ cd aardvark_py
-    $ make init-dev
+    $ make install-dev
     $ make
 
 Open ``docs/_build/html/index.html`` in a browser to view the generated
@@ -78,3 +99,8 @@ Permission to modify and redistribute the Python language modules and associated
 shared object files has been granted explicitly by Total Phase, Inc. for use in
 this package.  Distribution and use of this package is subject to the license
 agreement provided in the ``LICENSE.txt`` file distributed with this package.
+
+
+.. _Python.org: http://www.python.org
+.. _Pipenv: https://docs.pipenv.org
+.. _`officially recommended`: https://packaging.python.org/tutorials/managing-dependencies/#managing-dependencies

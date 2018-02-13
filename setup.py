@@ -5,6 +5,7 @@ http://www.totalphase.com/products/aardvark-software-api
 """
 
 import os, re, codecs
+import unittest
 
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
@@ -25,6 +26,9 @@ def find_version(*file_paths):
     if version_match:
         return version_match.group(1)
     raise RuntimeError('Unable to find version string.')
+
+def test_suite():
+    return unittest.TestSuite()
 
 setup(
     name='aardvark_py',
@@ -55,4 +59,6 @@ setup(
     packages=find_packages(),
 
     include_package_data = True,
+
+    test_suite='setup.test_suite',
 )
