@@ -27,9 +27,6 @@ def find_version(*file_paths):
         return version_match.group(1)
     raise RuntimeError('Unable to find version string.')
 
-def test_suite():
-    return unittest.TestSuite()
-
 setup(
     name='aardvark_py',
     version=find_version('aardvark_py', '__init__.py'),
@@ -60,5 +57,5 @@ setup(
 
     include_package_data = True,
 
-    test_suite='setup.test_suite',
+    test_suite='tests.test_suite',
 )
