@@ -372,58 +372,9 @@ epub_exclude_files = ['search.html']
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
 
-# def maybe_skip_member(app, what, name, obj, skip, options):
-#     print app, what, name, obj, skip, options
-#     return True
-#
-# def setup(app):
-#     app.connect('autodoc-skip-member', maybe_skip_member)
 
-# def maybe_skip_member(app, what, name, obj, skip, options):
-#     print "--------------------------------------------------------------------------------"
-#     print "app = %s" % app
-#     print "what = %s" % what
-#     print "name = %s" % name
-#     print "obj = %s" % obj
-#     print "skip = %s" % skip
-#     print "options = %s" % options
-#     print "--------------------------------------------------------------------------------"
-#     return False
-#
-# def setup(app):
-#     app.connect('autodoc-skip-member', maybe_skip_member)
-
-# autodoc_mock_imports = [
-#     'aardvark_py.aardvark.darwin.arch32.aardvark',
-#     'aardvark_py.aardvark.darwin.arch64.aardvark',
-#     'aardvark_py.aardvark.linux.arch32.aardvark',
-#     'aardvark_py.aardvark.linux.arch64.aardvark',
-#     'aardvark_py.aardvark.windows.arch32.aardvark',
-#     'aardvark_py.aardvark.windows.arch64.aardvark',
-# ]
-
-# autodoc_mock_imports = [
-#     'aardvark_py.aardvark',
-# ]
-
-# from mock import Mock as MagicMock
-#
-# class Mock(MagicMock):
-#     @classmethod
-#     def __getattr__(cls, name):
-#         if name in ('__file__', '__path__'):
-#             return os.devnull
-#         if name == '__all__':
-#             return []
-#         else:
-#             return Mock()
-#
-# MOCK_MODULES = [
-#     'aardvark_py.aardvark.darwin.arch32.aardvark',
-#     'aardvark_py.aardvark.darwin.arch64.aardvark',
-#     'aardvark_py.aardvark.linux.arch32.aardvark',
-#     'aardvark_py.aardvark.linux.arch64.aardvark',
-#     'aardvark_py.aardvark.windows.arch32.aardvark',
-#     'aardvark_py.aardvark.windows.arch64.aardvark',
-# ]
-# sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
+autodoc_mock_imports = [
+    'aardvark_py.aardvark.darwin',
+    'aardvark_py.aardvark.linux',
+    'aardvark_py.aardvark.windows',
+]

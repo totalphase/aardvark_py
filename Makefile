@@ -24,7 +24,8 @@ upload:
 	twine upload -u flyingcampdesign dist/*
 
 apidoc:
-	sphinx-apidoc -T -f -o docs/apidoc/ aardvark_py/ aardvark_py/aardvark/{darwin,linux,windows}
+	# sphinx-apidoc -T -f -o docs/apidoc/ aardvark_py/ aardvark_py/aardvark/{darwin,linux,windows}
+	sphinx-apidoc -T -f -o docs/apidoc/ aardvark_py/
 
 docs: apidoc
 	$(MAKE) -C docs html

@@ -16,7 +16,7 @@ wheel = "*"
 twine = "*"
 docutils = "*"
 pygments = "*"
-sphinx = "*"
+sphinx = ">=1.7.0"
 
 
 [requires]
