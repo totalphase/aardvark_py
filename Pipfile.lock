@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c33004f293fe020140ec863324ddb1538f1506d51eb6ed4e1308abe1738af022"
+            "sha256": "977664bce0f08358f84a018a4141d4a4f9f1fc76550841bf2bd1fb7292aa403a"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -26,12 +26,7 @@
             }
         ]
     },
-    "default": {
-        "e1839a8": {
-            "editable": true,
-            "path": "."
-        }
-    },
+    "default": {},
     "develop": {
         "alabaster": {
             "hashes": [
@@ -68,6 +63,10 @@
                 "sha256:51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274"
             ],
             "version": "==0.14"
+        },
+        "e1839a8": {
+            "editable": true,
+            "path": "."
         },
         "idna": {
             "hashes": [

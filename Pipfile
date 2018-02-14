@@ -7,7 +7,6 @@ name = "pypi"
 
 [packages]
 
-"e1839a8" = {path = ".", editable = true}
 
 
 [dev-packages]
@@ -17,6 +16,8 @@ twine = "*"
 docutils = "*"
 pygments = "*"
 sphinx = ">=1.7.0"
+"e1839a8" = {path = ".", editable = true}
 
 
 [requires]
+
