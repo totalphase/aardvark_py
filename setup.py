@@ -43,19 +43,28 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: Other/Proprietary License',
+        'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.5',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX :: Linux',
         'Topic :: Software Development :: Embedded Systems',
     ],
 
-    packages=find_packages(),
-
+    packages=find_packages(exclude=['docs', 'tests']),
+    extras_require={
+        'dev': [
+            'wheel',
+            'twine',
+            'docutils',
+            'pygments',
+            'sphinx>=1.7.0',
+        ],
+    },
     include_package_data = True,
-
     test_suite='tests.test_suite',
 )

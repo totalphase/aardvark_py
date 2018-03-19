@@ -1,7 +1,7 @@
 Total Phase Aardvark Python API
 ===============================
 
-This package provides the Total Phase Aardvark Python API modified for easy
+This package provides the Total Phase Aardvark Python API packaged for easy
 distribution and installation via PyPI.
 
 
@@ -14,7 +14,7 @@ API release zip file.  For example, the ``aardvark-py 5.15.0`` release on PyPI
 is guaranteed to be API compatible with
 ``aardvark-api-[platform]-[arch]-v5.15.zip``.  The "``micro``" component is an
 additional version specifier that is incremented whenever a new release of this
-package is published.
+package is published on PyPI.
 
 
 OS Support
@@ -40,15 +40,7 @@ Python 2).
 Installation
 ------------
 
-Now that Pipenv_ is the `officially recommended`_ Python packaging tool from
-Python.org_, the ``aardvark_py`` package can be installed from PyPI using
-``pipenv``:
-
-.. code-block:: console
-
-    $ pipenv install aardvark_py
-
-The ``aardvark_py`` package can also be installed from PyPI using ``pip``:
+The ``aardvark_py`` package can be installed from PyPI using ``pip``:
 
 .. code-block:: console
 
@@ -85,7 +77,7 @@ Development
 
     $ git clone https://github.com/FlyingCampDesign/aardvark_py.git
     $ cd aardvark_py
-    $ make install-dev
+    $ make dev-install
     $ make
 
 Open ``docs/_build/html/index.html`` in a browser to view the generated

@@ -1,12 +1,12 @@
-.PHONY: all install install-dev check test build dist upload apidoc docs clean-apidoc clean-docs clean
+.PHONY: all install dev-install check test build dist upload apidoc docs clean-apidoc clean-docs clean
 
 all: check test docs dist
 
 install:
-	pipenv install
+	pip install -e .
 
-install-dev:
-	pipenv install '-e .' --dev
+dev-install:
+	pip install -e .[dev]
 
 check:
 	python setup.py check
@@ -24,8 +24,7 @@ upload:
 	twine upload -u flyingcampdesign dist/*
 
 apidoc:
-	# sphinx-apidoc -T -f -o docs/apidoc/ aardvark_py/ aardvark_py/aardvark/{darwin,linux,windows}
-	sphinx-apidoc -T -f -o docs/apidoc/ aardvark_py/
+	sphinx-apidoc -T -f -o docs/apidoc/ aardvark_py/ aardvark_py/aardvark/{darwin,linux,windows}
 
 docs: apidoc
 	$(MAKE) -C docs html

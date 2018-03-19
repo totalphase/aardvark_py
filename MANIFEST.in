@@ -1,9 +1,5 @@
 include README.rst
 include LICENSE.txt
-include Makefile
-include Pipfile
-include Pipfile.lock
 
 recursive-include aardvark_py/aardvark *.so *.pyd
-
-exclude .gitignore
+recursive-include tests *.py
