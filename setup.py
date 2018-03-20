@@ -63,6 +63,7 @@ setup(
             'docutils',
             'pygments',
             'sphinx>=1.7.0',
+            'sphinx_rtd_theme',
         ],
     },
     include_package_data = True,
