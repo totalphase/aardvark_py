@@ -1,4 +1,4 @@
-.PHONY: all install dev-install check test build dist upload apidoc docs clean-apidoc clean-docs clean
+.PHONY: all install dev-install check test build dist upload test-upload docs view clean-docs tidy clean
 
 all: check test docs dist
 
@@ -29,7 +29,10 @@ test-upload:
 docs:
 	$(MAKE) -C docs html
 
-clean-docs: clean-apidoc
+view:
+	open docs/_build/html/index.html
+
+clean-docs:
 	rm -rf docs/apidoc/
 	$(MAKE) -C docs clean
 
