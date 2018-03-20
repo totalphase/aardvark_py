@@ -67,5 +67,6 @@ setup(
         ],
     },
     include_package_data = True,
+    zip_safe=False,
     test_suite='tests.test_suite',
 )
