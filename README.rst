@@ -1,6 +1,22 @@
 Total Phase Aardvark Python API
 ===============================
 
+.. image:: https://img.shields.io/pypi/v/aardvark-py.svg
+    :alt: PyPI version
+    :target: https://pypi.python.org/pypi/aardvark-py
+
+.. image:: https://img.shields.io/pypi/pyversions/aardvark-py.svg
+    :alt: Python versions
+    :target: https://pypi.python.org/pypi/aardvark-py
+
+.. image:: https://img.shields.io/readthedocs/aardvark_py.svg
+    :alt: RTD build
+    :target: https://aardvark-py.readthedocs.io/
+
+.. image:: https://img.shields.io/github/tag/expressjs/express.svg
+    :alt: GitHub tag
+    :target: https://github.com/FlyingCampDesign/aardvark_py
+
 This package provides the Total Phase Aardvark Python API packaged for easy
 distribution and installation via PyPI.
 
