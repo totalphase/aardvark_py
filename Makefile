@@ -3,10 +3,10 @@
 all: check test docs dist
 
 install:
-	pip install -e .
+	pip install -r requirements.txt
 
 dev-install:
-	pip install -e .[dev]
+	pip install -r dev-requirements.txt
 
 check:
 	python setup.py check
@@ -26,21 +26,18 @@ upload:
 test-upload:
 	twine upload -u flyingcampdesign --repository-url https://test.pypi.org/legacy/ dist/*
 
-apidoc:
-	sphinx-apidoc -T -f -o docs/apidoc/ aardvark_py/ aardvark_py/aardvark/{darwin,linux,windows}
-
-docs: apidoc
+docs:
 	$(MAKE) -C docs html
 
-clean-apidoc:
-	rm -rf docs/apidoc/
-
 clean-docs: clean-apidoc
+	rm -rf docs/apidoc/
 	$(MAKE) -C docs clean
 
-clean: clean-docs
-	python setup.py clean --all
+tidy:
 	find . -name \*.pyc -delete
 	find . -name __pycache__ -delete
+
+clean: clean-docs tidy
+	python setup.py clean --all
 	rm -rf *.egg-info dist
 	rm -f *.html

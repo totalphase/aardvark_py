@@ -1,1 +1,5 @@
+# Needed due to bug in 1.7.1
+# See https://github.com/rtfd/readthedocs.org/issues/3769
+sphinx==1.7.0
+
 -e .[dev]

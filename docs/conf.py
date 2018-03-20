@@ -22,6 +22,30 @@ from aardvark_py import __version__
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
+def run_apidoc(_):
+    print("Running sphinx-apidoc")
+    from sphinx.apidoc import main
+    apidoc_dir = 'apidoc'
+    module_name = 'aardvark_py'
+    sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+    cur_dir = os.path.abspath(os.path.dirname(__file__))
+    output_dir = os.path.join(cur_dir, apidoc_dir)
+    module_path = os.path.join(cur_dir, '..', module_name)
+    main(
+        [
+            '-T',
+            '-f',
+            '-o', output_dir,
+            module_path,
+            os.path.join(module_path, 'aardvark', 'darwin'),
+            os.path.join(module_path, 'aardvark', 'linux'),
+            os.path.join(module_path, 'aardvark', 'windows'),
+        ]
+    )
+
+def setup(app):
+    app.connect('builder-inited', run_apidoc)
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
