@@ -13,7 +13,7 @@ Total Phase Aardvark Python API
     :alt: RTD build
     :target: https://aardvark-py.readthedocs.io/
 
-.. image:: https://img.shields.io/github/tag/expressjs/express.svg
+.. image:: https://img.shields.io/github/tag/flyingcampdesign/aardvark_py.svg
     :alt: GitHub tag
     :target: https://github.com/FlyingCampDesign/aardvark_py
 
