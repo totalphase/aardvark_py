@@ -15,21 +15,6 @@
 import sys
 import os
 
-on_rtd = os.environ.get('READTHEDOCS') == 'True'
-if on_rtd:
-    try:
-        from mock import Mock as MagicMock
-    except ImportError: 
-        from unittest.mock import MagicMock
-
-    class Mock(MagicMock):
-        @classmethod
-        def __getattr__(cls, name):
-            return MagicMock()
-
-    MOCK_MODULES = ['aardvark']
-    sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
-
 from aardvark_py import __version__
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -385,7 +370,7 @@ epub_exclude_files = ['search.html']
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+intersphinx_mapping = {'https://docs.python.org/3/': None}
 
 
 autodoc_mock_imports = [
