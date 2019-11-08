@@ -1,3 +1,5 @@
+**Total Phase will be releasing official PyPi packages in November 2019.**
+
 Total Phase Aardvark Python API
 ===============================
 
