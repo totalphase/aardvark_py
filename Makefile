@@ -21,10 +21,10 @@ dist: build
 	python setup.py sdist bdist_wheel
 
 upload:
-	twine upload -u flyingcampdesign dist/*
+	twine upload -u totalphase dist/*
 
 test-upload:
-	twine upload -u flyingcampdesign --repository-url https://test.pypi.org/legacy/ dist/*
+	twine upload -u totalphase --repository-url https://test.pypi.org/legacy/ dist/*
 
 docs:
 	$(MAKE) -C docs html
