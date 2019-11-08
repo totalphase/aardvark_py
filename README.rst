@@ -1,5 +1,9 @@
 **Total Phase will be releasing official PyPi packages in November 2019.**
 
+**The Aardvark Software API v5.40 supports Python 2.6-2.7 and 3.5-3.8.**
+
+https://www.totalphase.com/products/aardvark-software-api
+
 Total Phase Aardvark Python API
 ===============================
 
