@@ -1,62 +1,24 @@
-**Total Phase will be releasing official PyPi packages in November 2019.**
-
-**The Aardvark Software API v5.40 supports Python 2.6-2.7 and 3.5-3.8.**
-
-https://www.totalphase.com/products/aardvark-software-api
-
 Total Phase Aardvark Python API
 ===============================
 
-.. image:: https://img.shields.io/pypi/v/aardvark-py.svg
-    :alt: PyPI version
-    :target: https://pypi.python.org/pypi/aardvark-py
+Official packages are available on PyPI.
 
-.. image:: https://img.shields.io/pypi/pyversions/aardvark-py.svg
-    :alt: Python versions
-    :target: https://pypi.python.org/pypi/aardvark-py
-
-.. image:: https://img.shields.io/readthedocs/aardvark_py.svg
-    :alt: RTD build
-    :target: https://aardvark-py.readthedocs.io/
-
-.. image:: https://img.shields.io/github/tag/totalphase/aardvark_py.svg
-    :alt: GitHub tag
-    :target: https://github.com/totalphase/aardvark_py
-
-This package provides the Total Phase Aardvark Python API packaged for easy
-distribution and installation via PyPI.
+https://pypi.org/project/aardvark-py/
 
 
-Total Phase Release Versions
-----------------------------
+The packages are created from the Aardvark API release package.
 
-The "``major.minor``" component of the PyPI release version
-(``major.minor.micro``) matches the ``v[major.minor]`` version of the aardvark
-API release zip file.  For example, the ``aardvark-py 5.15.0`` release on PyPI
-is guaranteed to be API compatible with
-``aardvark-api-[platform]-[arch]-v5.15.zip``.  The "``micro``" component is an
-additional version specifier that is incremented whenever a new release of this
-package is published on PyPI.
+https://www.totalphase.com/products/aardvark-software-api
 
 
-OS Support
-----------
+System Requirements
+-------------------
 
-The Python API from Total Phase officially supports the following OS versions:
-
-- Windows 7, 8, 8.1, 10
-- Mac OS 10.5 - 10.12
-- Ubuntu 12.04 LTS, 14.04 LTS, 16.04 LTS
-
-Since this package is derived directly from Total Phase API releases, it is
-subject to the same compatibility restrictions.
-
-
-Python 3 Support
-----------------
-
-API version 5.30 adds support for Python 3 (previous versions only supported
-Python 2).
+- Windows 7 or 10
+- Ubuntu 16.04 LTS or 18.04 LTS
+- Mac OS 10.13+
+- Python 2.6+ or 3.5+
+- 64-bit operating system
 
 
 Installation
@@ -66,22 +28,18 @@ The ``aardvark_py`` package can be installed from PyPI using ``pip``:
 
 .. code-block:: console
 
-    $ pip install aardvark_py
+    $ pip3 install aardvark_py
 
 
 Usage
 -----
 
 Once installed, the ``aardvark_py`` package is a drop-in replacement for the
-``aardvark_py.py`` language module distributed in the Aardvark API release from
-Total Phase.
+``aardvark_py.py`` module distributed in the Aardvark API release package.
 
 .. code-block:: console
 
-    $ python
-    Python 2.7.10 (default, Dec  3 2015, 13:28:10)
-    [GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.1.76)] on darwin
-    Type "help", "copyright", "credits" or "license" for more information.
+    $ python3
     >>> from aardvark_py import *
     >>> aa_find_devices(1)
     (1, array('H', [0]))
@@ -92,29 +50,7 @@ Total Phase.
     1
 
 
-Development
------------
-
-.. code-block:: console
-
-    $ git clone https://github.com/totalphase/aardvark_py.git
-    $ cd aardvark_py
-    $ make dev-install
-    $ make
-
-Open ``docs/_build/html/index.html`` in a browser to view the generated
-documentation.
-
-
 License
 -------
 
-Permission to modify and redistribute the Python language modules and associated
-shared object files has been granted explicitly by Total Phase, Inc. for use in
-this package.  Distribution and use of this package is subject to the license
-agreement provided in the ``LICENSE.txt`` file distributed with this package.
-
-
-.. _Python.org: http://www.python.org
-.. _Pipenv: https://docs.pipenv.org
-.. _`officially recommended`: https://packaging.python.org/tutorials/managing-dependencies/#managing-dependencies
+Please see the LICENSE.txt file in the package.
